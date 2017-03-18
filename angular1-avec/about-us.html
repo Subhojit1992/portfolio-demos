@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>AVEC</title>
+        
+        
+        <meta name="theme-color" content="#000">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+        <link rel="stylesheet" href="js/ng-ext-module/toaster/toaster.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script src="assets/js/vendor/modernizr.min.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.min.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body 
+        ng-controller="appParent"
+        ng-class="toBuy ? 'pop-active' : '' || toLet ? 'pop-active' : '' || register ? 'pop-active' : '' "
+        body-class="about-us"
+    >
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <toaster-container></toaster-container>
+        
+        <!-- subsscribe popup -->
+        <div class="subscribe-popup" id="pop-sub">
+            <a href="javascript:void(0);" id="subpopcls">X</a>
+            <div class="popsucess-cont">
+                <h2>Thank you for subscription!</h2>
+                <p>We have sent an activation mail to your mailbox for email confirmation. Please click on the link in the mailer to activate your subscription.</p>
+            </div>
+        </div>
+        <!-- subsscribe popup -->
+        
+        <!-- pop up wrap -->
+        <div class="popwrap" ng-class="toBuy ? 'active' : '' || toLet ? 'active' : '' || register ? 'active' : '' ">
+            <!-- to buy form -->
+            <div id="to-buy" class="to-form" ng-class="toBuy ? 'active' : '' ">
+                <div class="pop-head">
+                    <a href="javascript:void(0);" class="popclose" ng-click="toBuyClose();">X</a>
+                    <h3>To Buy</h3>
+                </div>
+                <div class="formcontent">
+                    <p>If you would like to buy or sale a luxury home,<br /> please allow one of senior associate to get in<br /> touch with you. Please fill-in the following details: </p>
+                    <form action="" method="post" id="buyform">
+                        <input type="text" name="name" class="sd-input" placeholder="Name" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your name">
+
+                        <input type="email" name="email" class="sd-input" placeholder="Email" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+
+                        <input type="text" name="tel" minlength="10" maxlength="10" class="sd-input" placeholder="Mobile" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter your mobile number" data-msg-number="This entry can only contain numbers" data-msg-minlength="Enter minimum 10 digit number" data-msg-maxlength="This entry can only contain 10 digit">
+                        
+                        <input type="text" name="city" class="sd-input city" placeholder="City" autocomplete="off" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your city">
+
+                        <input type="hidden" name="flag" value="tobuy">
+
+                        <div class="sbmthld">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- to buy form -->
+
+            <!-- to let form -->
+            <div id="to-let" class="to-form" ng-class="toLet ? 'active' : '' ">
+                <div class="pop-head">
+                    <a href="javascript:void(0);" class="popclose" ng-click="toLetClose();">X</a>
+                    <h3>To Let</h3>
+                </div>
+                <div class="formcontent">
+                    <p>If you would like to lease a property, please connect<br /> with us and we will take care of it.<br /> Please fill in the form below, to get in touch with you.</p>
+                    <form action="" method="post" id="letform">
+                        <input type="text" name="name" class="sd-input" placeholder="Name" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your name">
+
+                        <input type="email" name="email" class="sd-input" placeholder="Email" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+
+                        <input type="text" name="tel" minlength="10" maxlength="10" class="sd-input" placeholder="Mobile" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter your mobile number" data-msg-number="This entry can only contain numbers" data-msg-minlength="Enter minimum 10 digit number" data-msg-maxlength="This entry can only contain 10 digit">
+                        
+                        <input type="text" name="city" class="sd-input city" placeholder="City" autocomplete="off" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your city">
+
+                        <input type="hidden" name="flag" value="tolet">
+                        
+                        <div class="sbmthld">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- to let form -->
+            
+            <!-- register form -->
+            <div id="register" class="to-form" ng-class="register ? 'active' : '' ">
+                <div class="pop-head">
+                    <a href="javascript:void(0);" class="popclose" ng-click="registerClose();">X</a>
+                    <h3>Register</h3>
+                </div>
+                <div class="formcontent">
+                    <p>Sign up to receive the market update newsletters and be the <br /> first to know about exclusive listings, market studies and <br /> current trends.</p>
+                    <p style="color: #a27b1f;">Please fill in the form below and join the Avec <br /> subscription list </p>
+                    <form action="" method="post" id="registerform">
+                        <input type="text" name="name" class="sd-input" placeholder="Name" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your name">
+
+                        <input type="email" name="email" class="sd-input" placeholder="Email" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+
+                        <input type="text" name="tel" minlength="10" maxlength="10" class="sd-input" placeholder="Mobile" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter your mobile number" data-msg-number="This entry can only contain numbers" data-msg-minlength="Enter minimum 10 digit number" data-msg-maxlength="This entry can only contain 10 digit">
+                        
+                        <input type="text" name="city" class="sd-input city" placeholder="City" autocomplete="off" data-rule-required="true" data-rule-text="true" data-msg-required="Please enter your city">
+                        
+                        <input type="hidden" name="flag" value="register">
+
+                        <div class="sbmthld">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- register form -->
+        </div>
+        <!-- pop up wrap -->
+
+
+        <!-- preload section -->
+        <div id="preload">
+            <img src="assets/images/logo.png" class="preloadlogo" alt="AVEC" />
+            <div class="load">
+                <img src="assets/images/loading.gif" alt="loader" />
+                <span>Loading...</span>
+            </div>
+        </div>
+        <!-- // preload section -->
+
+        <div class="full-outer-wrap">
+
+            <header ng-include="'templates/header.htm'" id="header" class="mainheader"></header>
+            <!-- // header -->
+
+            <div ng-controller="aboutCtrl">
+                <nav id="slidenav">
+                </nav> <!-- /slidenav -->
+                
+
+                <div class="stat-banner" ng-if="banner.image" back-img="{{banner.image}}">
+                    <div class="mainwrap">
+                        <div class="st-text-holder">
+                            <img src="assets/images/home/quote.png" class="overlap" alt="quote">
+                            <p ng-bind="banner.text"></p>
+                        </div>
+                    </div>
+
+                    <nav id="spclbtngrpnav" class="spclnav mobile">
+                        <ul>
+                            <li><a href="javascript:void(0);" ng-click="toBuyTrigger();" data-id="to-buy">To Buy</a></li>
+                            <li><a href="javascript:void(0);" ng-click="toLetTrigger();" data-id="to-let">To Let</a></li>
+                            <li><a href="javascript:void(0);" ng-click="registerTrigger();" data-id="register">Register</a></li>
+                        </ul>
+                    </nav><!-- /spclbtngrpnav -->
+                </div> <!-- // stat-banner -->
+
+                <div class="content-area" style="background: url(../assets/images/about/overly-logo.png) no-repeat 3% bottom;background-attachment: fixed;">
+
+                    <div class="base-cont-wrap about-section">
+                        <h2>ABOUT AVEC</h2>
+                        <div class="about-detail">
+                            <h3>{{about.title}}</h3>
+                            <div ng-bind-html="about.content"></div>
+                        </div>
+                    </div> <!-- // about-detail -->
+                </div> <!-- // content-area -->
+
+                <div class="about-spcl">
+                    <div class="base-cont-wrap">
+                        <h2>THE AVEC PEOPLE</h2>
+                        <ul>
+                            <li ng-repeat="people in peoples">
+                                <hgroup data-mh="about-hgroup-eq">
+                                    <h3>{{people.name}}</h3>
+                                    <h4>{{people.position}}</h4>
+                                </hgroup>
+                                <p>{{people.shortDescription}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- // about-spcl -->
+            </div>
+
+
+            <footer id="mainfoot" ng-include="'templates/footer.htm'"></footer> <!-- //footer -->
+            
+        </div>
+        
+        <!-- <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/plugin.js"></script> -->
+
+        <!-- ng dependency -->
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-animate.js"></script>
+        <script src="js/lib/angular-sanitize.js"></script>
+
+        <!-- ng extarnal lib -->
+        <!-- <script src="js/ng-ext-module/ng-loading/loading-bar.min.js"></script> -->
+        <script src="js/ng-ext-module/toaster/toaster.min.js"></script>
+
+        <!-- app -->
+        <script src="js/app.js"></script>
+        <!-- <script src="assets/js/production/main-min.js"></script> -->
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/plugin.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>

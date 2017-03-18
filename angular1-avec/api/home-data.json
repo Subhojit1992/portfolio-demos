@@ -1,0 +1,68 @@
+{
+  "slider": [
+    {
+    	"imagenumber": 1,
+        "textPos": "right",
+		"image": "assets/images/home/slide-1.jpg",
+		"caption": "I think we are in right time, now in India to invest in luxury. It's like investing in New York or London in the 70's."
+    },
+    {
+    	"imagenumber": 2,
+        "textPos": "left",
+		"image": "assets/images/home/slide-2.jpg",
+		"caption": "India is the next China next USA next Europe <span class='italic'>Undoubtedly</span>"
+    }
+  ],
+  "services": [
+    {
+    	"title": "Sales",
+    	"image": "assets/images/home/sales.jpg",
+    	"contentHeading": "Exclusive Estate Services",
+    	"contentExcerpt": "Avec has an inventory of a wide range of handpicked properties.",
+    	"link": "sales.html"
+    },
+    {
+    	"title": "Lettings",
+    	"image": "assets/images/home/letting.jpg",
+    	"contentHeading": "Letting Luxury Property",
+    	"contentExcerpt": "Avec provides full-on letting services of exclusive properties on behalf of private individuals, landlords, investors, family trusts, developers, companies and corporations...",
+    	"link": "lettings.html"
+    },
+    {
+    	"title": "Developments",
+    	"image": "assets/images/home/development.jpg",
+    	"contentHeading": "Developments Project marketing",
+    	"contentExcerpt": "Avec has a dedicated team of leasing and marketing experts having unique experience of new project marketing, feasibility study, strategic sales planning etc.",
+    	"link": "developments.html"
+    },
+    {
+    	"title": "Property",
+    	"image": "assets/images/home/property-managment.jpg",
+    	"contentHeading": "Property management services",
+    	"contentExcerpt": "Avec offers unparalleled asset management services coverIng all areas necessary for maintaining the integrity of all your properties.",
+    	"link": "property-management.html"
+    }
+  ],
+  "aboutImage": "assets/images/home/about-left.jpg",
+  "aboutTitle": "Your private estate managers",
+  "aboutContent": "With over 100 years of collective experience of finding luxury homes for the discerning clientele, Avec specialises in exclusive residential homes in India and abroad. Trusted unreservedly by everyone we work with, from private individuals a. landlords to investors, family trusts and developers",
+  "aboutLink": "about-us.html",
+  "contactUs": [
+    {
+    	"image": "assets/images/home/contact-item-1.jpg",
+    	"location": "Gurgaon",
+    	"address": "C-6I B VI Floor, Super Mart-1 <br>Office Block, DLF-4 <br>Gurgaon(Haryana) - 122002 <br>Tel: 0124-4581A600 - 699 <br>Fax: +91-124 -4380493"
+    },
+    {
+    	"image": "assets/images/home/contact-item-2.jpg",
+    	"location": "Canada",
+    	"address": "1234, Bay Street, suite 400 <br>Toronto ONM5R3K4 Canada <br>Tel: 0124-4581600 - 699 <br>Fax: +91-124 -4380493"
+    },
+    {
+    	"image": "assets/images/home/contact-item-3.jpg",
+    	"location": "Singapore",
+    	"address": "19 Cecil Street,The Quadrant at Cecil <br>Level 5, Singapore 049704 <br>Tel: +65 6637 8908 <br>Fax: +65 6637 8880 "
+    }
+  ],
+  "brandImage": "assets/images/home/left-card.jpg"
+}

@@ -1,0 +1,228 @@
+// responsive =< 639px 
+@include breakpoint($res639-mx) {
+	// common area
+	#header{
+		padding: 5px;
+		.nav-container{
+			margin-top: 40px;
+		}
+	}
+	#mobiletrigger{
+		padding-top: 5px;
+	}
+	#mainnav{
+		a{
+			font-size: 13px;
+		}
+	}
+	#mainfoot{
+		.widefoot{
+			padding: 40px 20px;
+			.mid-cont{
+				padding-right: 120px;
+			}
+		}
+		.bottomstatus{
+			padding: 5px 20px;
+		}
+	}
+
+	#mainfoot{
+		 .bottomstatus{
+		 	 .footnavgrp{
+		 	 	 span{
+		 	 	 	padding: 0 4px;
+		 	 	 }
+		 	 }
+		 }
+	}
+	// common area
+
+
+	// home page
+	#mn-slider{
+		 .quote-cont{
+		 	p{
+		 		font-size: 16px;
+		 		line-height: 20px;
+		 	}
+		 	&.right{
+		 		width: 200px;
+		 		background-position: 130px 43px;
+		 		top: 20px;
+		 		right: 15px;
+		 	}
+		 	&.left{
+		 		width: 190px;
+		 		top: 20px;
+		 	}
+		 }
+	}
+	.slides-navigation{
+		 a{
+		 	&.next{
+		 		right: 20px;
+		 		&:after{
+		 			width:20px;
+		 			height: 20px;
+		 		}
+		 	}
+		 	&.prev{
+		 		left: 20px;
+		 		&:after{
+		 			width:20px;
+		 			height: 20px;
+		 		}
+		 	}
+		 }
+	}
+	#scroll-down{
+		&:before{
+			height:20px;
+		}
+	}
+	.slides-pagination{
+		bottom: 20px !important;
+		top: auto;
+	}
+	.page-exp{
+		 ul{
+		 	 li{
+		 	 	padding: 0 50px;
+		 	 }
+		 }
+	}
+	.to-form{
+		left: 15px;
+		right: 15px;
+		.formcontent{
+			    padding: 25px 15px;
+		}
+	}
+	// home page
+
+	//sales page
+	.avec-inner-tpl{
+		h2{
+			max-width: 100%;
+			font-size: 21px;
+			margin-bottom: 25px;
+			text-align: center;
+			&:before{
+				width:45px;
+				left: -55px;
+			}
+		}
+		 .intro-para{
+		 	padding: 0 40px;
+		 	h3{
+		 		font-size:20px;
+		 	}
+		 }
+		 .spcl-tabular-content{
+		 	margin: 10px 20px 30px;
+		 	hgroup{
+		 		 h2{
+		 		 	font-size: 14px;
+		 		 	span{
+		 		 		font-size: 18px;
+		 		 	}
+		 		 }
+		 	}
+		 }
+	}
+	//sales page
+
+	//about page
+	.st-text-holder{
+		width: 400px;
+		p{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.overlap{
+			width: 100px;
+		}
+	}
+	.about-section{
+		padding: 30px 30px;
+		h2{
+			margin-bottom: 30px;
+			font-size: 24px;
+		}
+		.about-detail{
+			h3{
+				font-size: 18px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+	.about-spcl{
+		margin: 0 20px;
+		padding: 25px 20px 15px;
+		h2{
+			font-size: 24px;
+			margin-bottom: 30px;
+			&:before{
+				width:40px;
+				left: -50px;
+			}
+		}
+		ul{
+			li{
+				 hgroup{
+				 	h3{
+				 		font-size: 18px;
+				 	}
+				 }
+			}
+		}
+	}
+	//about page
+
+	//contact page
+	.st-text-holder{
+		&.contact-hold{
+			width: 250px;
+		}
+	}
+	//contact page
+
+	//blog page
+	.mainwrap{
+		&.avec-post{
+			padding-top: 70px;
+		}
+	}
+	.postarchivewrap{
+		.postlist{
+			padding: 0;
+			margin-bottom: 35px;
+			article{
+				margin-bottom: 30px;
+				h3{
+					font-size: 24px;
+				}
+			}
+		}
+		.post-sidebar{
+			padding: 0;
+		}
+	}
+	.pagination {
+	    padding-top: 30px;
+	}
+	//blog page
+
+
+
+}
+// responsive =< 639px 
+
+
+
+
+

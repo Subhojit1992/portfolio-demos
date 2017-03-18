@@ -1,0 +1,22 @@
+{
+  "bannerImage": "assets/images/contact-us/contact-us-banner.jpg",
+  "bannerText": "all our processes are designed to take least of your valuable time",
+  "contactUs": [
+    {
+      "image": "assets/images/home/contact-item-1.jpg",
+      "location": "Gurgaon",
+      "address": "C-6I B VI Floor, Super Mart-1 <br>Office Block, DLF-4 <br>Gurgaon(Haryana) - 122002 <br>Tel: 0124-4581A600 - 699 <br>Fax: +91-124 -4380493"
+    },
+    {
+      "image": "assets/images/home/contact-item-2.jpg",
+      "location": "Canada",
+      "address": "1234, Bay Street, suite 400 <br>Toronto ONM5R3K4 Canada <br>Tel: 0124-4581600 - 699 <br>Fax: +91-124 -4380493"
+    },
+    {
+      "image": "assets/images/home/contact-item-3.jpg",
+      "location": "Singapore",
+      "address": "19 Cecil Street,The Quadrant at Cecil <br>Level 5, Singapore 049704 <br>Tel: +65 6637 8908 <br>Fax: +65 6637 8880 "
+    }
+  ]
+  
+}

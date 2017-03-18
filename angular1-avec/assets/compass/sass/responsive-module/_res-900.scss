@@ -1,0 +1,78 @@
+// responsive =< 900px 
+@include breakpoint(max-width 900px) {
+	// common area
+	#header{
+		.nav-container{
+			margin-top: 50px;
+			#tagline{
+				top: -42px;
+			}
+		}
+	}
+	#mainfoot{
+		.widefoot{
+			.right-cont{
+				p{
+					br{
+						display: none;
+					}
+				}
+			}
+			.left-cont,
+			.mid-cont{
+				ul{
+					li{
+						a{
+							font-size: 14px;
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// common area
+
+	// home page
+	#mn-slider{
+		.quote-cont{
+			&.right{
+				width: 245px;
+				background-position: 160px 43px;
+			}
+		}
+	}
+	.about-component h2{
+		margin-bottom: 40px;
+	}
+	.about-card{
+		div.shrtabtcontent{
+			padding: 25px;
+		}
+	}
+	.contact-info{
+		.destwrap{
+			ul{
+				li{
+					h4{
+						display: block;
+						min-width: 0;
+						width: 100%;
+					}
+					address{
+						line-height: 28px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.sidebarformwrap .contact-form{
+		padding-right: 0px;
+	}
+	// home page
+
+
+
+}
+// responsive =< 900px 

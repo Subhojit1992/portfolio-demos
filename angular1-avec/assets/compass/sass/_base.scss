@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html.overflowhidden,
+body.overflowhidden{
+	overflow: hidden;
+}
+body{
+	background: #000;
+	color: #fff;
+	@include transition(0.2s ease-in-out all);
+	a{
+		text-decoration: none;
+		color: #AF8938;
+	}
+}
+.cf{
+	&:after,
+	&:before{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.img-responsive{
+	max-width: 100%;
+	display: block;
+}
+// loader
+#preload{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: rgba(0, 0, 0, 0.92);
+	.preloadlogo{
+		width: 70px;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		@include translateX(-50%);
+	}
+	.load{
+		width: 50px;
+		text-align: center;
+		height: auto;
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		@include translate(-50%, -55%);
+		img{
+			display: block;
+			width: 100%;
+		}
+		span{
+			color: rgba(179, 138, 59, 0.60);
+			display: inline-block;
+			margin-top: 4px;
+		}
+	}
+}
+
+
+// loader
+.mainwrap{
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+.base-cont-wrap{
+	max-width: 1125px;
+	margin: 0 auto;
+	@extend .cf;
+}
+.footmainwrap{
+	max-width: 1300px;
+	margin: 0 auto;
+	@extend .cf;
+}
+
+
+
+// static banners height
+.stat-banner{
+	height: 65vh;
+}
+
+// static banner height
+
+
+// mobile menu
+
+#mobiletrigger,
+#slidenav{
+	display: none;
+}
+
+// mobile menu
+
+// subscribe pop
+.subscribe-popup{
+	display: none;
+	position: fixed;
+    z-index: 9999;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &.active{
+    	display: block;
+    }
+    a{
+    	&#subpopcls{
+			display: inline-block;
+			font-size: 30px;
+			font-weight: 300;
+			position: absolute;
+			right: 50px;
+			top: 30px;
+    	}
+    }
+    .popsucess-cont{
+    	max-width: 780px;
+    	margin: 0 auto;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+		@include translate(-50%, -50%);
+		text-align: center;
+    	h2{
+	    	font-family: "BaskervilleBT-Roman",sans-serif;
+	    	color: #AF8938;
+	    	font-size: 46px;
+    		margin-bottom: 10px;
+	    }
+	    p{
+			font-size: 16px;
+			max-width: 465px;
+			letter-spacing: 1.2px;
+			line-height: 25px;
+			margin: 0 auto;
+			font-weight: 300;
+	    }
+    }
+    
+}
+
+
+// subscribe pop
+
+
+// temp style
+.avec-inner-tpl.coming{
+	height: 100vh;
+}
+// temp style
+
+
+

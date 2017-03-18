@@ -1,0 +1,29 @@
+{
+  "bannerImage": "assets/images/lettings/lettings-banner.jpg",
+  "lettingsTitle": "LETTING LUXURY PROPERTIES",
+  "lettingsContent": "Finding of a tenant for your property is often just the first step in a successful letting. There are many practical and legal issues to consider and the list can be endless. Avec provides full-on letting services of exclusive properties on behalf of private individuals, landlords, investors, family trusts, developers, companies and corporations in prime locations of India.",
+  "offerings": [
+    {
+        "title": "<span>Art</span> AVEC RESIDENTIAL TEAM (ART) offerings",
+        "smallOverview": "The AVEC RESIDENTIAL TEAM (ART) has an experience of dedicated residential lettings including short and long term let residential properties. It provides exceptional choices and has become a preferred agency to call by discerning landlords and tenants.",
+        "offerlist":[
+          "Tenant search and rent negotiations",
+          "Lease management and rental reviews",
+          "Final Settlement with tenant on vacant property",
+          "Assign back property to owner"
+        ]
+    },
+    {
+        "title": "<span>Act</span> AVEC COMMERCIAL TEAM (ACT) offerings",
+        "smallOverview": "AVEC COMMERCIAL TEAM (ACT), takes care of rentals of exclusive commercial properties in large office spaces, IT spaces, retail that include long and short term let properties in India’s corporate hubs.",
+        "offerlist":[
+          "Identification of suitable tenant mix",
+          "Find a suitable commercial property based on need",
+          "Rental value, leasing period of the shortlisted property",
+          "Final negotiation and enveloping of transaction",
+          "Leasing restructuring",
+          "Legal and tax assistance"
+        ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<div class="mainwrap cf">
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="assets/images/logo.png" class="img-responsive" alt="AVEC" />
+        </a>
+    </div>
+    <div class="nav-container cf">
+        
+        <span id="tagline">Your private Estate Managers</span>
+
+        <nav id="spclbtngrpnav" class="spclnav desktop">
+            <ul>
+                <li><a href="javascript:void(0);" ng-click="toBuyTrigger();" data-id="to-buy">To Buy</a></li>
+                <li><a href="javascript:void(0);" ng-click="toLetTrigger();" data-id="to-let">To Let</a></li>
+                <li><a href="javascript:void(0);" ng-click="registerTrigger();" data-id="register">Register</a></li>
+            </ul>
+        </nav><!-- /spclbtngrpnav -->
+        
+        <!-- <a href="javascript:void(0);" id="mobiletrigger">Menu</a> -->
+        <a id="mobiletrigger" href="javascript:void(0);" ng-class=" mobileMenu ? 'active' : '' " ng-click="mobileMenuToggle();"><span></span></a>
+
+        <nav id="mainnav">
+            <ul>
+                <li data-nav="home">
+                    <a href="index.html" ng-class=" navHome ? 'active' : '' ">Home</a>
+                </li>
+                <li data-nav="">
+                    <a href="javascript:void(0);" ng-click="pop()">Sales</a>
+                </li>
+                <li data-nav="lettings">
+                    <a href="lettings.html" ng-class=" navLettings ? 'active' : '' ">Lettings</a>
+                </li>
+                <li data-nav="developments">
+                    <a href="developments.html" ng-class=" navDevelopments ? 'active' : '' ">Developments</a>
+                </li>
+                <li data-nav="">
+                    <a href="javascript:void(0);" ng-click="pop()">Property Management</a>
+                </li>
+                <li data-nav="about-us">
+                    <a href="about-us.html" ng-class=" navAboutUs ? 'active' : '' ">About us</a>
+                </li>
+                <li data-nav="">
+                    <a href="javascript:void(0);" ng-click="pop()">Services</a>
+                </li>
+                <li data-nav="contact-us">
+                    <a href="contact-us.html" ng-class=" navContactUs ? 'active' : '' ">Contact-us</a>
+                </li>
+                <li data-nav="">
+                    <a href="javascript:void(0);" ng-click="pop()">Blog</a>
+                </li>
+            </ul>
+        </nav> <!-- /mainnav -->
+    </div>
+</div>

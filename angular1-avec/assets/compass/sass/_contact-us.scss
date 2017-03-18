@@ -1,0 +1,13 @@
+.st-text-holder{
+	&.contact-hold{
+		background: none;
+		top: 40vh;
+		padding: 0px;
+		width: 330px;
+		.overlap{
+			width: 120px;
+			left: 90%;
+    		@include translate(-90%, -50%);
+		}
+	}
+}

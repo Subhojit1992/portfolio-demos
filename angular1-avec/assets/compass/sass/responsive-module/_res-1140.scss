@@ -1,0 +1,39 @@
+// responsive =< 1140px 
+@include breakpoint($res1140-mx) {
+	// common area
+	#header{
+		padding: 10px 12px 12px;
+	}
+	#mainnav{
+		a{
+			font-size: 13px;
+		}
+	}
+	#mainfoot{
+		.widefoot{
+			padding: 90px 20px 40px;
+			.mid-cont{
+				padding-right: 120px;
+			}
+		}
+		.bottomstatus{
+			padding: 5px 20px;
+		}
+	}
+	// common area
+
+	// home page
+	.sidebarformwrap .base-cont-wrap{
+		padding: 55px 20px;
+	}
+	// home page
+
+
+
+}
+// responsive =< 1140px 
+
+
+
+
+

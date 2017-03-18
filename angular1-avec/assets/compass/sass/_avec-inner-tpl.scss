@@ -1,0 +1,124 @@
+.avec-inner-tpl{
+	text-align: center;
+	padding-top: 62px;
+	h2{
+		display: inline-block;
+		margin: 0px;
+		font-family: $baskerville-normal;
+		font-size: 28px;
+		line-height: 32px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		position: relative;
+		margin-bottom: 60px;
+		&:before{
+			content: '';
+			display: block;
+			width: 56px;
+			height: 6px;
+			background: #9F7B1A;
+			position: absolute;
+			left: -78px;
+			top: 50%;
+			@include translateY(-50%);
+		}
+	}
+	.intro-para{
+		text-align: left;
+		padding: 0 225px;
+		h3{
+			font-size: 24px;
+			color: #a78943;
+			margin: 0px;
+			font-weight: 300;
+			margin-bottom: 17px;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+		}
+		p{
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: 1.2px;
+			font-weight: 300;
+			margin-top: 0px;
+			margin-bottom: 22px;
+		}
+	}
+	.pad{
+		padding: 0 225px;
+	}
+	.spcl-tabular-content{
+		margin-top: 10px;
+		margin-bottom: 30px;
+		text-align: left;
+		background: #1b1b1b;
+		hgroup{
+			background: #2e2e2e;
+			h2{
+				font-family: $base-font;
+				font-size: 23px;
+				line-height: 26px;
+				color: #fff;
+				margin: 0px;
+				text-transform: uppercase;
+				padding: 18px 0 16px;
+				&:before{
+					display: none;
+				}
+				span{
+					color: #a78943;
+					font-size: 35px;
+					position: relative;
+					padding: 0 15px 0 0;
+					margin-right: 10px;
+					display: inline-block;
+					&:after{
+						content: '';
+						display: block;
+						height: 100%;
+						width: 1px;
+						background: #fff;
+						position: absolute;
+						top: 0px;
+						right: 0px;
+					}
+				}
+			}
+		}
+		.tabulardata{
+			padding-top: 35px;
+			padding-bottom: 35px;
+			p{
+				font-size: 16px;
+				line-height: 26px;
+				margin: 0px;
+				margin-bottom: 40px;
+			}
+			ul{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				li{
+					display: block;
+					font-size: 16px;
+					line-height: 26px;
+					border-bottom: 1px solid #a78842;
+					padding-bottom: 10px;
+					padding-top: 10px;
+					&:first-child{
+						padding-top: 0px;
+					}
+					&:last-child{
+						padding-bottom: 0px;
+						border-bottom: 0px;
+					}
+					span{
+						padding-left: 10px;
+						border-left: 1px solid #fff;
+					}
+				}
+			}
+		}
+	}
+}

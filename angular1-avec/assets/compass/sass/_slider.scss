@@ -1,0 +1,126 @@
+#mn-slider{
+	position: relative;
+	.quote-cont{
+		width: 418px;
+		padding: 50px 30px 0 0;
+		position: absolute;
+		&.right{
+			position: absolute;
+			right: 170px;
+			background: url(../images/home/quote.png) no-repeat 140px 43px;
+			background-size: 50%;
+		}
+		&.left{
+			width: 263px;
+			position: absolute;
+			padding: 50px 70px 0 0;
+			left: 170px;
+			background: url(../images/home/quote.png) no-repeat 53px 43px;
+			background-size: 80%;
+			.italic{
+				font-family: $baskerville-italic;
+				letter-spacing: 1.2px;
+				color: #332828;
+			}
+		}
+		p{
+			font-family: $baskerville-normal;
+			font-size: 31px;
+			line-height: 39px;
+			color: #010000;
+			margin: 0px;
+		}
+	}
+
+}
+.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 42%;
+    width: 100%;
+}
+.slides-navigation{
+	a {
+	    position: absolute;
+	    display: block;
+	    border-color: transparent;
+	    &.next{
+	    	right: 60px;
+	    	&:after{
+				content: '';
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				border-top: 2px solid #fff;
+				border-left: 2px solid #fff;
+				@include transition(0.5s ease-in-out all);
+				@include rotate(135deg);
+	    	}
+	    }
+	    &.prev{
+	    	left: 60px;
+	    	&:after{
+				content: '';
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				border-top: 2px solid #fff;
+				border-left: 2px solid #fff;
+				@include transition(0.5s ease-in-out all);
+				@include rotate(-45deg);
+	    	}
+	    }
+	}
+}
+
+.slides-pagination {
+    bottom: auto !important;
+    top: 50%;
+    right: 0px;
+    width: auto !important;
+    display: inline-block;
+    @include transform(translateY(-50%) rotate(90deg));
+    a{
+    	border: 2px solid #fff !important;
+    	margin: 2px 5px !important;
+    	background: #fff;
+    	font-size: 0;
+    	&.current{
+    		background: #A1791E !important;
+    		border: 2px solid #A1791E !important;
+    	}
+    }
+}
+
+#scroll-down{
+	display: inline-block;
+	font-family: $gillsans-bold;
+	font-size: 15px;
+	line-height: 31px;
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	@include translateX(-50%);
+	z-index: 9;
+	text-transform: uppercase;
+	font-weight: normal;
+	@include text-shadow(0px 1px 2px #7e7673);
+	&:before{
+		content: '';
+		display: block;
+		height: 100px;
+		width: 3px;
+		background: #A27314;
+		position: absolute;
+		bottom: 32px;
+		left: 50%;
+		@include translateX(-50%);
+	}
+}
+
+
+
+
+

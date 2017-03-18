@@ -1,0 +1,29 @@
+{
+  "bannerImage": "assets/images/developments/developments-banner.jpg",
+  "lettingsTitle": "DEVELOPMENT PROJECT MARKETING",
+  "lettingsContent": "Avec has a dedicated team of leasing and marketing experts having unique experience of new project marketing, feasibility study, strategic sales planning etc.",
+  "offerings": [
+    {
+        "title": "<span>Art</span> AVEC RESIDENTIAL TEAM (ART) offerings",
+        "smallOverview": "The AVEC RESIDENTIAL TEAM (ART) specializes in selling luxury residential property for some of the country’s most prestigious developers. The team is uniquely qualified to provide valuable insight for your current or next project.",
+        "offerlist":[
+          "Valuations",
+          "Design and layout inputs",
+          "Project positioning",
+          "Devising sales and marketing strategies"
+        ]
+    },
+    {
+        "title": "<span>Act</span> AVEC COMMERCIAL TEAM (ACT) offerings",
+        "smallOverview": "The AVEC COMMERCIAL TEAM (ACT) acts as advisors and consultants in development and disposal of commercial property. The offering includes a broad range of bespoke advisory, sales and marketing advice on large scale commercial developments to many of leading developers.",
+        "offerlist":[
+          "Marketing of luxury residential projects by eminent developers",
+          "Valuations",
+          "Commercial project marketing",
+          "Design and layout inputs",
+          "Project positioning",
+          "Devising sales and marketing strategies"
+        ]
+    }
+  ]
+}

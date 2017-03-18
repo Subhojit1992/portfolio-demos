@@ -1,0 +1,183 @@
+#mainfoot{
+	// bottom status
+	.bottomstatus{
+		background: #fff;
+		padding: 5px 0;
+		color: #000;
+		a{
+			color: #000;
+			&:hover{
+				color: #BB831B;
+			}
+		}
+		.footmainwrap{
+			div{
+				width: 50%;
+				&:first-child{
+					float: left;
+				}
+				&:last-child{
+					float: right;
+					text-align: right;
+				}
+			}
+		}
+		.footnavgrp{
+			span{
+				display: inline-block;
+				padding: 0 10px;
+				border-right: 1px solid #000;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0px;
+					border-right: 0px;
+				}
+			}
+		}
+	}
+
+	// wide foot
+	.widefoot{
+		padding: 90px 0 40px;
+		// border-top: 1px solid rgba(255,255,255,0.22);
+		h3{
+			margin: 0px;
+			font-weight: normal;
+			font-size: 17px;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+		}
+		ul{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+		.left-cont{
+			width: 34%;
+			float: left;
+			padding-right: 97px;
+			h3{
+				margin-bottom: 18px;
+			}
+			ul{
+				li{
+					display: block;
+					padding: 8px 0;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+					a{
+						color: #fff;
+						font-size: 16px;
+						line-height: 20px;
+						font-weight: 300;
+						letter-spacing: 1.2px;
+					}
+				}
+			}
+		}
+		// mid cont
+		.mid-cont{
+			width: 34%;
+			float: left;
+			padding-right: 247px;
+			h3{
+				margin-bottom: 18px;
+			}
+			ul{
+				li{
+					display: block;
+					padding: 6px 0;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+					a{
+						color: #fff;
+						font-size: 16px;
+						line-height: 20px;
+						font-weight: 300;
+						letter-spacing: 1.2px;
+						text-transform: uppercase;
+						&:hover{
+							.icohold{
+								background: lighten(#a07720, 10%);
+							}
+						}
+					}
+				}
+			}
+			.icohold{
+				display: inline-block;
+				width: 25px;
+				height: 24px;
+				background: #a07720;
+				text-align: center;
+				padding-top: 3px;
+			}
+		}
+		// right cont
+		.right-cont{
+			width: 32%;
+			float: right;
+			h3{
+				margin-bottom: 18px;
+			}
+			p{
+				margin: 0px;
+				font-size: 13px;
+				letter-spacing: 1.2px;
+				line-height: 18px;
+				margin: 8px 0;
+			}
+			input[type="text"],
+			input[type="email"]{
+				width: 240px;
+				box-sizing: border-box;
+				padding: 9px 60px 9px 10px;
+				outline: none;
+				color: #000;
+				height: 38px;
+				border: 0;
+				@include border-radius(0);
+				@include box-shadow(none);
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: #000;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					color: #000;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					color: #000;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: #000;
+				}
+			}
+			button{
+				background: #AFB0B5;
+				display: inline-block;
+				width: 60px;
+				border: 0px;
+				font-size: 25px;
+				text-shadow: none;
+				color: transparent;
+				height: 38px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				outline: none;
+				i{
+					color: #fff;
+				}
+				&:hover{
+					background: darken(#AFB0B5, 20%);
+				}
+			}
+			.signupinputhold{
+				width: 240px;
+				box-sizing: border-box;
+				position: relative;
+			}
+		}
+	}
+
+}
+

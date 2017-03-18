@@ -1,0 +1,54 @@
+@import 'compass/css3';
+@import "breakpoint";
+@import "memo";
+
+// values
+@import 'vars';
+
+// fonts and reset
+@import 'fonts';
+@import 'normalize';
+@import 'base';
+
+
+// header style
+@import 'header';
+// footer style
+@import 'footer';
+// slider style
+@import 'slider';
+// bottom sidebar section
+@import 'sidebar-section';
+// bottom contact info
+@import 'contact-info';
+// component
+@import 'component';
+
+// pages
+@import 'home';
+@import 'about-us';
+@import 'avec-inner-tpl';
+@import 'contact-us';
+@import 'blog';
+
+
+
+// plugin style
+@import 'plugin';
+
+// **************************************************************
+// warning: this is not the good way to write css in this module
+// this file added because for urgent fixing if need
+// **************************************************************
+@import 'extra';
+
+
+// responsive
+@import 'responsive';
+
+
+
+
+
+
+

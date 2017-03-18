@@ -1,0 +1,234 @@
+.mainwrap{
+	&.avec-post{
+		padding: 50px 20px 0;
+	}
+}
+
+// post related area
+.postarchivewrap{
+	text-align: left;
+	padding-bottom: 80px;
+	// post list
+	.postlist{
+		width: 76%;
+		float: left;
+		padding-right: 287px;
+		article{
+			margin-bottom: 75px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			h3{
+				font-family: $baskerville-normal;
+				font-size: 40px;
+				font-weight: 300;
+				color: #fff;
+				line-height: 45px;
+				margin: 0px;
+				margin-bottom: 16px;
+				a{
+					color: #fff;
+				}
+			}
+			span.date{
+				font-size: 14px;
+				color: #6D6F71;
+				display: block;
+				border-bottom: 1px solid #6D6F71;
+				text-transform: uppercase;
+				display: block;
+				padding: 8px 0;
+				margin-bottom: 30px;
+			}
+			figure{
+				padding: 0;
+				margin: 0;
+				margin-bottom: 20px;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			p{
+				font-size: 15px;
+				line-height: 24px;
+				letter-spacing: 1.2px;
+				font-weight: 300;
+				margin-top: 0px;
+				margin-bottom: 22px;
+			}
+			a.post-btn{
+				display: inline-block;
+				width: 120px;
+				height: 37px;
+				background: #A27B1F;
+				color: #fff;
+				border: 0px;
+				font-weight: 300;
+				letter-spacing: 1.2px;
+				outline: none;
+				text-align: center;
+				padding-top: 10px;
+				&:hover{
+					background: lighten(#A27B1F, 10%);
+				}
+			}
+		}
+	}
+	// post sidebar
+	.post-sidebar{
+		width: 24%;
+		float: right;
+		.widget{
+			padding: 25px 0;
+			border-bottom: 1px solid #3B3B3B;
+			&:first-child{
+				padding-top: 0px;
+			}
+			&:last-child{
+				padding-bottom: 0px;
+				border-bottom: 0px;
+			}
+			h3{
+				margin: 0px;
+				padding: 0px;
+				margin-bottom: 20px;
+				font-family: $baskerville-normal;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				// font-weight: 300;
+			}
+			p{
+				line-height: 20px;
+				font-size: 13px;
+				letter-spacing: 1.1px;
+				margin: 0;
+				margin-bottom: 15px;
+			}
+			.widget__social{
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+				margin-bottom: 18px;
+				li{
+					display: inline-block;
+					a{
+						display: inline-block;
+						width: 30px;
+						height: 30px;
+						text-align: center;
+						padding-top: 3px;
+						background: #AF8938;
+						color: #fff;
+						font-size: 22px;
+						&:hover{
+							background: darken(#AF8938, 10%);
+						}
+					}
+				}
+			}
+			input{
+				min-width: 190px;
+				height: 25px;
+				box-sizing: border-box;
+				letter-spacing: 1.2px;
+				color: #fff;
+				font-size: 12px;
+				outline: none;
+				background: transparent;
+				border: 1px solid #6E6E6E;
+				padding: 0 5px;
+				margin-bottom: 15px;
+				@include border-radius(0);
+				@include box-shadow(none);
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: #fff;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					color: #fff;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					color: #fff;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: #fff;
+				}
+			}
+			button{
+				background: #AF8938;
+				@include border-radius(50px);
+				border: 0px;
+				outline: none;
+				padding: 4px 16px;
+				letter-spacing: 1.1px;
+				&:hover{
+					background: darken(#AF8938, 10%);
+				}
+			}
+			.post__list{
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				font-family: $baskerville-normal;
+				li{
+					padding-right: 70px;
+					border-bottom: 1px solid #3B3B3B;
+					padding-top: 15px;
+					&:first-child{
+						padding-top: 0px;
+					}
+					&:last-child{
+						border-bottom: 0px;
+						p{
+							margin-bottom: 0px;
+						}
+					}
+				}
+				a{
+					font-size: 14px;
+					color: #fff;
+					&:hover{
+						color: #AF8938;
+					}
+				}
+			}
+			.post__tags{
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				font-family: $baskerville-normal;
+				li{
+					padding: 8px 70px 8px 0;
+					&:first-child{
+						padding-top: 0px;
+					}
+					&:last-child{
+						padding-bottom: 0px;
+					}
+					a{
+						font-size: 16px;
+						color: #fff;
+						&:hover{
+							color: #AF8938;
+						}
+					}
+				}
+			}
+
+			// not common area
+			&.area--tags{
+				h3{
+					color: #AF8938;
+				}
+			}
+			// not common area
+		}
+	}
+
+}
+
+
+// pagination
+.pagination{
+	padding-top: 85px;
+}

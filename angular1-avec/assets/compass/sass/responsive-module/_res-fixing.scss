@@ -1,0 +1,106 @@
+// fixing area
+@include breakpoint(max-width 1245px) {
+	#mainnav{
+		a{
+			padding: 0 4px;
+		}
+		ul{
+			text-align: right;
+		}
+	}
+}
+@include breakpoint(max-width 1200px){
+	.about-section{
+		padding: 50px 20px 105px;
+	}
+	.about-spcl{
+		padding: 45px 20px 25px;
+	}
+	//blog page
+	.postarchivewrap{
+		 .postlist{
+		 	width: 62%;
+		 	padding-right: 0;
+		 }
+		 .post-sidebar{
+		 	width: 30%;
+		 	.widget{
+		 		 .post__list{
+		 		 	 li{
+		 		 	 	padding-right: 0;
+		 		 	 }
+		 		 }
+		 		 .post__tags{
+		 		 	li{
+		 		 		padding-right: 0;
+		 		 	}
+		 		 }
+		 	}
+		 }
+	}
+	//blog page
+}
+@include breakpoint(max-height 480px) {
+	#slidenav{
+		height: 100%;
+		overflow-y: scroll;
+		padding-bottom: 200px !important;
+		ul{
+			li{
+				line-height: 35px !important;
+			}
+		}
+	}
+}
+@include breakpoint(max-width 1080px) {
+	.stat-banner{
+		background-position: center center;
+	}
+	.avec-inner-tpl{
+		.pad {
+			padding: 0 190px;
+		}
+	}
+}
+@include breakpoint(max-width 1023px){
+	/*.stat-banner{
+		height: 40vh;
+	}*/
+	.st-text-holder{
+		left: 30px;
+	}
+	.avec-inner-tpl{
+		.pad {
+			padding: 0 60px;
+		}
+	}
+	.avec-inner-tpl{
+		 .intro-para{
+		 	padding: 0 125px;
+		 }
+	}
+	.about-spcl{
+		 ul{
+		 	li{
+		 		width: 50%;
+		 		margin-bottom: 35px;
+		 		&:nth-child(2){
+		 			border-right:0;
+		 		}
+		 	}
+		 }
+	}
+	//blog page
+	.postarchivewrap{
+		 .postlist{
+		 	article{
+		 		h3{
+		 			font-size: 32px;
+		 			line-height: 40px;
+		 		}
+		 	}
+		 }
+	}
+	//blog page
+}
+// fixing area

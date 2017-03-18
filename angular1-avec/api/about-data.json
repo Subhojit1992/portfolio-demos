@@ -1,0 +1,28 @@
+{
+  "bannerImage": "assets/images/about/about-banner.jpg",
+  "bannerText": "We recognize that perhaps the estate decisions are the most significant in your journey of success.",
+  "aboutTitle": "Partners to preserve and enhance your estate wealth",
+  "aboutContent": "<p>With over 100 years of collective experience of finding luxury homes for the discerning clientele, Avec specialises in exclusive residential homes in India and abroad. Trusted unreservedly by everyone we work with, from private individuals and landlords to investors, family trusts and developers, we are discreet and goal focussed. Think of us as your private wealth managers focussed on real estate.</p> <p>Whether you're buying a primary or a second home or a vacation property, we will help you get the finest condominiums, penthouses, villas, and farm houses. We screen each property to ensure that it befits your need.</p>",
+  "aboutPeople": [
+    {
+        "name": "VAIBHAV DHINGRA",
+        "position": "Executive Director",
+        "shortDescription": "A congenial personality & an initiator Vaibhav is a business graduate from India’s one of the top rated B-Schools, Management Development Institute (MDI). He firmly believes that successful long-term client relationships are built on the pillars of trust, communication and knowledge. Regarded as a thought leader in his sphere Vaibhav has over 20 years of experience by his side. Apart from his relentless pursuit of excellence, Vaibhav is also particular about his fitness regime."
+    },
+    {
+        "name": "CHINTAN KHARBANDA",
+        "position": "Executive Director",
+        "shortDescription": "A self-motivated zeal to achieve keeps Chintan busy in exploring new business ideas. His role, other than business development, involves overall responsibility for the company’s marketing, communication, project promotion and business intelligence. Chintan is also a graduate from India’s prime B-School, Indian Institute of Management, Lucknow and has a rich experience in the formative years in the area of banking and FMCG. When not occupied with Avec, Chintan enjoys reading and family time."
+    },
+    {
+        "name": "MUDIT SAHAE",
+        "position": "Vice President",
+        "shortDescription": "Instrumental in conceptualizing, developing and rolling out of multiple business development activities, Mudit oversees the residential services vertical of AVEC Realty. A DU (Delhi University) graduate, he worked with one of the leading travel company as head of North India, before joining Avec. Mohit enjoys playing golf early morning."
+    },
+    {
+        "name": "CHIRAG KHARBANDA",
+        "position": "Vice President",
+        "shortDescription": "Performance driven and highly pragmatic, Chirag, displays strong leadership skills. His area of focus as a part of Avec involves investments, promotion of new projects & maintaining a healthy relationships across the chain. Chirag is also graduate from DU (Delhi University) and has over 10 years of experience in IT. Chirag loves to travel and finds long drive road trips truly relaxing."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+// responsive =< 640px 
+@include breakpoint(max-width 640px) {
+
+	// common area
+	#mainfoot{
+		.widefoot{
+			padding: 35px 80px;
+			h3{
+				font-size: 20px;
+			}
+			.left-cont,
+			.mid-cont,
+			.right-cont{
+				width: 100%;
+				float: none;
+				font-size: 15px;
+				ul{
+					li{
+						line-height: 30px;
+						a{
+							font-size: 17px;
+						}
+					}
+				}
+				p{
+					font-size: 17px;
+					max-width: 290px;
+    				line-height: 25px;
+				}
+			}
+			.right-cont{
+				.signupinputhold{
+			 	 		width: 240px;
+			 	 	}
+			 	 	input[type="email"]{
+			 	 		width: 240px;
+			 	}
+		 	}
+			.base-cont-wrap{
+				> div{
+					padding: 30px 0;
+					&:first-child{
+						padding-top: 0px;
+					}
+					&:last-child{
+						padding-bottom: 0px;
+					}
+				}
+			}
+		}
+
+		.bottomstatus{
+			.footmainwrap{
+				div{
+					&:first-child{
+						width: 65%;
+					}
+					&:last-child{
+						width: 35%;
+					}
+				}
+			}
+		}
+
+	}
+	// common area
+
+	// home page
+	.page-exp{
+		ul{
+			li{
+				width: 100%;
+				padding: 0 90px;
+			}
+		}
+	}
+	.about-card{
+		display: block;
+		.aboutstatimg{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		div{
+			display: block;
+			width: 100%;
+		}
+	}
+	.contact-info{
+		.destwrap{
+			ul{
+				li{
+					width: 100%;
+					float: none;
+					max-width: 405px;
+					margin: 0 auto 65px;
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+	.sidebarformwrap{
+		.base-cont-wrap{
+			padding: 35px 80px;
+		}
+		.branding,
+		.contact-form{
+			width: 100%;
+		}
+		.branding{
+			border-right: 0px;
+			padding-right: 0px;
+			padding-bottom: 35px;
+			margin-bottom: 35px;
+			border-bottom: 1px solid rgba(255,255,255,0.22);
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		.contact-form{
+			padding-left: 0px;
+		}
+	}
+	// home page
+
+
+}
+// responsive =< 640px 

@@ -1,0 +1,130 @@
+// main header section
+#header{
+	position: fixed;
+	padding: 10px 0 12px;
+	border-top: 1px solid #AF8938;
+	border-bottom: 5px solid #AF8938;
+	width: 100%;
+	top: 0px;
+	background: #000;
+	z-index: 999;
+	.logo-container{
+		width: 15%;
+		float: left;
+	}
+	.nav-container{
+		width: 85%;
+		float: right;
+		position: relative;
+		margin-top: 70px;
+		#tagline{
+			font-family: $baskerville-italic;
+			font-size: 18px;
+			line-height: 23px;
+			color: #A27B1F;
+			position: absolute;
+			top: -55px;
+			right: 0px;
+		}
+	}
+}
+// main header section
+
+// navigation
+.spclnav{
+	&.desktop{
+		display: block;
+	}
+	&.mobile{
+		display: none;
+	}
+}
+#mainnav,
+#spclbtngrpnav{
+	ul{
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				display: inline-block;
+				color: #fff;
+				@include transition(ease-in-out all $transition-normal);
+				&.active,
+				&:hover{
+					color: #AF8938;
+					@include transition(ease-in-out all $transition-normal);
+				}
+			}
+		}
+	}
+}
+#mainnav{
+	float: left;
+	width: 70%;
+	padding-top: 10px;
+	ul{
+		font-size: 0px;
+		li{
+			&:first-child{
+				a{
+					padding-left: 0px;
+				}
+			}
+			&:last-child{
+				a{
+					padding-right: 0px;
+					border-right: 0px;
+				}
+			}
+		}
+	}
+	a{
+		font-family: $baskerville-normal;
+		font-size: 15px;
+		line-height: 15px;
+		padding: 0 9px;
+		border-right: 1px solid #fff;
+	}
+}
+#spclbtngrpnav{
+	float: right;
+	width: 28%;
+	ul{
+		font-size: 0px;
+		display: table;
+		width: 100%;
+		li{
+			// margin-right: 1px;
+			display: table-cell;
+			&:last-child{
+				margin-right: 0px;
+				a{
+					width: 100%;
+				}
+			}
+			a{
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+	a{
+		font-family: $gillsans-regular;
+		font-size: 14px;
+		line-height: 30px;
+		text-transform: uppercase;
+		// min-width: 118px;
+		width: 98%;
+		background: #AF8938;
+		text-align: center;
+		padding: 3px 5px;
+		&:hover{
+			background: darken(#AF8938, 8%);
+		}
+	}
+}
+
+// navigation
