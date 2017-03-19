@@ -2,11 +2,27 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     /* loader remove by jquery */
     $('#preload').fadeOut('slow');
+    // console.log($('#header').outerHeight());
+    $(window).trigger('resize');
 });
 // jquery area
 
 // main app var
 var app = angular.module('myApp', ['toaster', 'ngAnimate', 'ngSanitize']);
+
+
+app.run(function($rootScope){
+  $rootScope.$on("$includeContentLoaded", function(event, header){
+     //...
+     console.log('hurreee');
+     // console.log($('#header').outerHeight());
+
+     $rootScope.headerHeight = $('#header').outerHeight();
+     // console.log($rootScope.height);
+  });
+});
+
+
 
 // *************
 // directive START
@@ -50,7 +66,6 @@ app.directive('backImg', function(){
 // bg url
 
 
-
 // add body class for navigation active
 app.directive('bodyClass', [function(){
 	// Runs during compile
@@ -84,7 +99,7 @@ app.directive('bodyClass', [function(){
 // add body class for navigation active
 
 
-
+// working on this
 app.directive('sameHeight', function ($window, $timeout) {
     var sameHeight = {
         restrict: 'A',
@@ -119,6 +134,33 @@ app.directive('sameHeight', function ($window, $timeout) {
     };
     return sameHeight;
 });
+// working on this
+
+
+
+app.directive('resize', function ($window, $rootScope) {
+	console.log($rootScope.height);
+  return function (scope, element) {
+    var w = angular.element($window);
+    w.bind('resize', function () {
+      scope.$apply(update);
+    });
+    update(); // initial setup
+    // console.log(scope.$root.height);
+    function update() {
+      var height = w.height();
+      var width = w.width();
+      scope.windowHeight = height;
+      scope.windowWidth = width;
+      scope.style = function() {
+        return {
+          'height': (height) + 'px',
+          'width': (width) + 'px'
+        };
+      };
+    }   
+  }
+})
 
 
 
@@ -226,7 +268,7 @@ app.controller('homeCtrl', function($scope, $http, dataFactory) {
     dataFactory.getHomeData().then(function(response) {
     	// get full home data
 		$scope.homeData = response.data;
-		// console.log($scope.homeData);
+		console.log($scope.homeData);
 		// assign value as per property
 		// service DATA
 		$scope.homeServicesData = $scope.homeData.services; 
@@ -243,6 +285,19 @@ app.controller('homeCtrl', function($scope, $http, dataFactory) {
 		$scope.brandImage = $scope.homeData.brandImage;
 
     });
+
+
+    // trigger resized function
+    $scope.triggerResize = function () {
+	    var fireRefreshEventOnWindow = function () {
+		     var evt = document.createEvent("HTMLEvents");
+		     evt.initEvent('resize', true, false);
+		     window.dispatchEvent(evt);
+		 };
+	    console.log('Trigger resized');
+	};
+
+
 });
 
 

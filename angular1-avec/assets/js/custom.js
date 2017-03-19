@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 	// main home slider |= START =|
 	// ****************************
 		$('#slides').superslides({
-			inherit_height_from: '#mn-slider'
+			// inherit_height_from: '#mn-slider'
 		});
 	// ****************************
 	// main home slider |= END =|
@@ -68,9 +68,9 @@ jQuery(document).ready(function($) {
 		// $('#sidebarform').validate();
 
 		// email validation regex code
-		$.validator.methods.email = function( value, element ) {
-		  return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
-		}
+		// $.validator.methods.email = function( value, element ) {
+		//   return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
+		// }
 		// header form
 	// *********************************************
 	// to form right side grouped button |= END =|
@@ -81,13 +81,13 @@ jQuery(document).ready(function($) {
 	// ********************************
 	// subscribe popup hide |= START =|
 	// ********************************
-		$('#subpopcls').on('click', function(event) {
-			event.preventDefault();
-			/* Act on the event */
-			$(this).parent('#pop-sub').removeClass('active');
-			$("#news_form input").val('');
+		// $('#subpopcls').on('click', function(event) {
+		// 	event.preventDefault();
+		// 	 // Act on the event 
+		// 	$(this).parent('#pop-sub').removeClass('active');
+		// 	$("#news_form input").val('');
 
-		});
+		// });
 	// ******************************
 	// subscribe popup hide |= END =|
 	// ******************************
@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
 
 
 	// trigger 'resize' func
-	$(window).trigger('resize');
+	// $(window).trigger('resize');
 
 });
 
@@ -107,36 +107,36 @@ jQuery(document).ready(function($) {
 // ******************************
 $(window).on("load resize",function(e){
 
-	// get the window width and height
-	var winW = $(window).width(),
-		winH = $(window).height();
+	// // get the window width and height
+	// var winW = $(window).width(),
+	// 	winH = $(window).height();
 
-	// slider container height set
-	var getHdrHght = $('#header').outerHeight(),
-		sliderValue = (winH - getHdrHght) + 'px';
+	// // slider container height set
+	// var getHdrHght = $('#header').outerHeight(),
+	// 	sliderValue = (winH - getHdrHght) + 'px';
 
-	$('#mn-slider').height(sliderValue);
+	// $('#mn-slider').height(sliderValue);
 
 	// header padding for fixed nav
-	var headerHight = $('#header').outerHeight();
-	$('body').css({
-		paddingTop: headerHight + 'px'
-	});
-	// fixed spcl nav
-	$('#spclbtngrpnav.spclnav.mobile').css({
-		top: (headerHight + 5) + 'px'
-	});
+	// var headerHight = $('#header').outerHeight();
+	// $('body').css({
+	// 	paddingTop: headerHight + 'px'
+	// });
+	// // fixed spcl nav
+	// $('#spclbtngrpnav.spclnav.mobile').css({
+	// 	top: (headerHight + 5) + 'px'
+	// });
 
-	// mobile menu resize appending
-	var $mainnav 	 = $('#mainnav'),
-		$navitem 	 = $mainnav.find('ul'),
-		$destination = $('#slidenav');
-	// on resize if else
-	if(winW <= 767){
-		$destination.append($navitem);
-	}else{
-		$mainnav.append($destination.find('ul'));
-	}
+	// // mobile menu resize appending
+	// var $mainnav 	 = $('#mainnav'),
+	// 	$navitem 	 = $mainnav.find('ul'),
+	// 	$destination = $('#slidenav');
+	// // on resize if else
+	// if(winW <= 767){
+	// 	$destination.append($navitem);
+	// }else{
+	// 	$mainnav.append($destination.find('ul'));
+	// }
 
 
 
