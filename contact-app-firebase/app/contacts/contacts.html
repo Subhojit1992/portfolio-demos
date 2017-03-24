@@ -93,8 +93,15 @@
 
 
 	  <div class="col-md-6">
-	  	
-	  	<table class="table table-striped">
+
+	  	<h5 ng-show="tableloaded">
+	  		<span style="font-size: 7px; color: #2196f3;">
+	  			<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+	  		</span>
+	  		All contacts are loading....
+	  	</h5>
+
+	  	<table class="table table-striped" ng-show="!tableloaded">
 	  		<thead>
 	  			<tr>
 	  				<th>Name</th>
@@ -104,6 +111,7 @@
 	  			</tr>
 	  		</thead>
 	  		<tbody>
+
 	  			<tr 
 	  				ng-repeat="contact in contacts | filter: searchKeywordValue.inputModel">
 	  				<td>{{contact.name}}</td>
@@ -115,6 +123,7 @@
 	  						<i class="glyphicon glyphicon-remove-sign"></i>
 	  					</a>
 	  				</td>
+	  				<!-- https://github.com/michaelbromley/angularUtils/tree/master/src/directives/pagination#installation -->
 	  			</tr>
 	  		</tbody>
 
